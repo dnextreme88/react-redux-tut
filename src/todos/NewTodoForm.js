@@ -33,7 +33,8 @@ const NewTodoForm = ( {todos, onCreatePressed} ) => {
 const mapStateToProps = state => ({
     todos: state.todos,
 });
-const mapDispatchToProps = dispath => ({
+
+const mapDispatchToProps = dispatch => ({
     onCreatePressed: text => dispatch(createTodo(text)),
 });
 

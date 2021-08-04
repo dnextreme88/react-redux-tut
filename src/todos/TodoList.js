@@ -14,10 +14,10 @@ const TodoList = ({ todos = [], onRemovePressed }) => (
 
 const mapStateToProps = state => ({
     todos: state.todos,
-})
+});
 
 const mapDispatchToProps = dispatch => ({
     onRemovePressed: text => dispatch(removeTodo(text)),
-})
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
