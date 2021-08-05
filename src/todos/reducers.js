@@ -31,7 +31,7 @@ export const todos = (state = initialState, action) => {
             const { todo: updatedTodo } = payload;
             return {
                 ...state,
-                data: state.filter.map(todo => {
+                data: state.data.map(todo => {
                     if (todo.id === updatedTodo.id) {
                         return updatedTodo;
                     }
