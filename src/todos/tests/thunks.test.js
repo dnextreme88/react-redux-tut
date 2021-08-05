@@ -9,7 +9,7 @@ describe('The loadTodos thunk', () => {
         const fakeDispatch = sinon.spy();
 
         const fakeTodos = [{ text: '1' }, { text: '2' }];
-        fetchMock.get('http://localhost:8080/todos', fakeTodos);
+        fetchMock.get('http://localhost:8080/todos-delay', fakeTodos);
 
         const expectedFirstAction = { type: 'LOAD_TODOS_IN_PROGRESS' };
         const expectedSecondAction = {
